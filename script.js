@@ -1,6 +1,9 @@
 let checked = new Set([]);
 
 const firstNonRepeatedChar = function (str) {
+	  if (str.length == 0) {
+    return null;
+  }
   for (let i = 0; i < str.length; i++) {
     let curr = str[i];
     if (checked.has(curr)) {
