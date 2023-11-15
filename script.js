@@ -15,6 +15,9 @@ const firstNonRepeatedChar = function (str) {
         return curr;
       }
     }
+    if (i == str.length - 1) {
+      return null;
+    }
   }
 };
 
